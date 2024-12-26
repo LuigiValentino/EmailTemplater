@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailTemplater</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>Templates</h2>
+            <ul class="template-list">
+                <li data-template="basic">📝 Template Básico</li>
+                <li data-template="newsletter">📬 Newsletter</li>
+                <li data-template="promotion">🔥 Promoción</li>
+            </ul>
+            <h2>Añadir Bloques</h2>
+            <ul class="block-list">
+                <li data-block="text">✍️ Texto</li>
+                <li data-block="heading">📰 Encabezado</li>
+                <li data-block="button">🔘 Botón</li>
+                <li data-block="image">🖼️ Imagen</li>
+                <li data-block="list-bullets">📋 Lista con Viñetas</li>
+                <li data-block="list-numbers">🔢 Lista Numerada</li>
+                <li data-block="quote">💬 Cita</li>
+                <li data-block="image-text">🖼️+✍️ Imagen y Texto</li>
+                <li data-block="divider">➖ Separador</li>
+                <li data-block="footer">🦶 Footer</li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <header class="navbar">
+                <h1>EmailTemplater</h1>
+                <button id="new-template"><i class="fas fa-file-alt"></i> Nuevo</button>
+                <button id="export-html"><i class="fas fa-download"></i> Exportar</button>
+            </header>
+            <main class="workspace">
+                <div id="editor-container">
+                    <textarea id="html-editor"></textarea>
+                </div>
+                <div id="preview-container">
+                    <iframe id="preview"></iframe>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 EmailTemplater. Todos los derechos reservados. <a href="https://luigiadducci.netlify.app">Luigi Adducci</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
